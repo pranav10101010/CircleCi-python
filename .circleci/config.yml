@@ -4,12 +4,6 @@ jobs:
     docker:
       - image: python:3.9
     steps:
-      - checkout
-      - run:
-          name: Install Dependencies
-          command: |
-            pip install -r requirements.txt
-
       - run:
           name: Run main.py
           command: |
